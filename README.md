@@ -7,7 +7,6 @@
 
 Este projeto visa implementar um **Sistema de E-commerce** para playlists de músicas, aplicando os conceitos de TypeScript e programação orientada a objetos, em um ambiente de console interativo.
 
----
 
 ## ⚙️ Funcionalidades
 
@@ -24,7 +23,6 @@ Este projeto visa implementar um **Sistema de E-commerce** para playlists de mú
    - Edição e exclusão de playlists cadastradas.
    - Busca detalhada por ID ou listagem geral.
 
----
 
 ## 🛠️ Estrutura do Projeto
 
@@ -44,11 +42,63 @@ Este projeto visa implementar um **Sistema de E-commerce** para playlists de mú
 ### 3. Controlador (Controller)
 - Responsável pela lógica de negócio e armazenamento de playlists, implementando os métodos definidos na interface com uso de **Collections** para gerenciar os dados.
 
----
 
 ## 🚀 Como Executar
 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/emilyestvz/midnight_tracks.git
-   cd midnight_tracks
+   cd projeto_final_bloco_01
+
+2. Instale as dependências:
+   ```bash	
+   npm install
+
+3. Compile o projeto:
+   ```bash
+   tsc
+
+4. Execute o programa:
+   ```bash
+   node dist/Menu.ts
+
+
+## 📂 Estrutura de Diretórios
+   ```bash	
+midnight_tracks/
+├── Menu.ts
+├── src/
+│   ├── models/
+│   │   ├── Playlist.ts
+│   │   ├── Genero.ts
+|   |   ├── Mood.ts
+│   └── repository/
+│   |    ├── PlaylistRepository.ts
+|   | 
+│   └── controller/
+|        ├── PlaylistController.ts
+|
+├── tsconfig.json
+└── package.json
+```
+
+## 🕒 Etapas e Desenvolvimento
+### Etapa 1: Construção do Menu
+- Criar a branch 01_Menu.
+- Implementar o menu interativo com funcionalidades básicas.
+
+### Etapa 2: Construção das Classes e Repositórios
+- Criar a branch 02_Model_Repository.
+- Implementar a classe abstrata, classe derivada e interface.
+- Testar funcionalidades CRUD básicas.
+
+### Etapa 3: Implementação do Controller
+- Criar a branch 03_Controller.
+- Desenvolver métodos do CRUD utilizando coleções.
+- Atualizar o menu para integração com os métodos do controller.
+- Testar a aplicação completa.
+
+***
+
+### Desenvolvido por:
+#### [Emily Cristiny Dias](https://github.com/emilyestvz) | 2024 ✨
