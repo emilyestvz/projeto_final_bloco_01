@@ -4,8 +4,8 @@ export class Mood extends Playlist {
     
     private _humor: string;
 
-    constructor(id: number, nome: string, descricao: string, genero: string, artista: string, humor: string) {
-        super(id, nome, descricao, genero, artista);
+    constructor(id: number, nome: string, tipo: number, descricao: string, genero: string, artista: string, humor: string) {
+        super(id, tipo, nome, descricao, genero, artista);
         this._humor = humor;
     }
 

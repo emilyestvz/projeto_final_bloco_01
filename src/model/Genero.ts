@@ -2,24 +2,26 @@ import { Playlist } from "./Playlist";
 
 export class Genero extends Playlist {
    
-    private _tipo: string;
+    private _estiloMusical: string;
 
-    constructor(id: number, nome: string, descricao: string, genero: string, tipo: string) {
-        super(id, nome, descricao, genero, tipo);
-        this._tipo = tipo;
+    constructor(id: number, tipo: number, nome: string, descricao: string, genero: string, artista: string, estiloMusical: string) {
+        super(id, tipo, nome, descricao, genero, artista);
+        this._estiloMusical = estiloMusical;
     }
 
-	public get tipo(): string {
-		return this._tipo;
+	public get estiloMusical(): string {
+		return this._estiloMusical;
 	}
 
-	public set tipo(value: string) {
-		this._tipo = value;
+	public set estiloMusical(value: string) {
+		this._estiloMusical = value;
 	}
+
+
 
     visualizar(): void {
         super.visualizar();
-        console.log(`Gênero: ${this._tipo}`);
+        console.log(`Mood: ${this._estiloMusical}`);
     }
 
 }
