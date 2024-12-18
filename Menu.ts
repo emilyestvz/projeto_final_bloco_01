@@ -5,9 +5,8 @@ import { colors } from './src/util/Colors';
 
 export function main(){
 
-    let opcao, id, nome, artista, genero, musica, playlist;
-    let rock, pop: string;
-    const generos = ['Rock', 'Pop']
+    let opcao, id, nome, artista, genero, descricao;
+    const tipo = ['Publica', 'Privada']
 
     let continuar = true;
 
@@ -65,7 +64,7 @@ export function main(){
                 artista = readlineSync.question('');
 
                 // Criando a música para adicionar
-                switch (musica) {
+                switch (tipo) {
                     case 1:
                         //
                         break;
